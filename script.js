@@ -1,7 +1,4 @@
-window.onload = function () {
+document.addEventListener("click", () => {
     const music = document.getElementById("bgmusic");
-
-    if (music) {
-        music.play().catch(() => {});
-    }
-};
+    music.play();
+}, { once: true });
